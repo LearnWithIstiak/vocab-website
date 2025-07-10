@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vocabulary Cards</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Vocabulary Cards</h1>
+    <button id="toggle-dark">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <section class="controls">
+    <input type="text" id="search-input" placeholder="Search words..." />
+    <select id="pos-filter">
+      <option value="">All Parts of Speech</option>
+      <option value="noun">Noun</option>
+      <option value="verb">Verb</option>
+      <option value="adjective">Adjective</option>
+    </select>
+  </section>
+
+  <div id="cards-container"></div>
+
+  <div class="pagination">
+    <button id="prev-btn">Previous</button>
+    <span id="page-info"></span>
+    <button id="next-btn">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
